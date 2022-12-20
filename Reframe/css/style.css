@@ -1,0 +1,204 @@
+.banner-slider{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+   }
+   .banner-slider ul{
+     padding: 0%;
+     display: flex;
+     width: 200%;
+   
+     animation: cambio 5s infinite;
+     animation-direction: alternate;
+     animation-timing-function: linear;
+    }
+    .banner-slider li{
+     list-style: none;
+     width: 100%;
+    }
+    .banner-slider img{
+       width: 100%;
+    }
+   @keyframes cambio{
+     0%{margin-left: 0;}
+     40%{margin-left: 0;}
+     50%{margin-left: -100%;}
+     100%{margin-left: -100%;}
+   }
+   h3 p{
+    font-weight: 500;
+   }
+
+   .floating-form {
+    width:320px;
+  }
+  
+  /****  floating-Lable style start ****/
+  .floating-label { 
+    position:relative; 
+    margin-bottom:20px; 
+  }
+  .floating-input , .floating-select {
+    font-size:14px;
+    padding:4px 4px;
+    display:block;
+    width:100%;
+    height:30px;
+    background-color: transparent;
+    border:none;
+    border-bottom:1px solid #757575;
+  }
+  
+  .floating-input:focus , .floating-select:focus {
+       outline:none;
+       border-bottom:2px solid #5264AE; 
+  }
+  
+  label {
+    color:#999; 
+    font-size:14px;
+    font-weight:normal;
+    position:absolute;
+    pointer-events:none;
+    left:5px;
+    top:5px;
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+  }
+  
+  .floating-input:focus ~ label, .floating-input:not(:placeholder-shown) ~ label {
+    top:-18px;
+    font-size:14px;
+    color:#5264AE;
+  }
+  
+  .floating-select:focus ~ label , .floating-select:not([value=""]):valid ~ label {
+    top:-18px;
+    font-size:14px;
+    color:#5264AE;
+  }
+  
+  /* active state */
+.floating-input:focus ~ .bar:before, .floating-input:focus ~ .bar:after, .floating-select:focus ~ .bar:before, .floating-select:focus ~ .bar:after {
+  width:100%;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.carrousel{
+  width: 100%;
+}
+
+.conteCarrousel{
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.itemCarrousel{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+.itemCarrouselTarjeta{
+  width: 100%;
+  height: 100%;
+}
+
+.itemCarrouselArrows{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px; 
+}
+
+.itemCarrouselArrows > i:hover {
+  cursor: pointer;
+}
+
+.conteCarrouselController{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.conteCarrouselController > a{
+  text-decoration: none;
+  font-size: 2em;
+  color: grey;
+}
+
+.itemCarrouselArrows > a > i{
+  color: white;
+}
+
+
+.carrouselB{
+  width: 100%;
+}
+
+.conteCarrouselB{
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+}
+
+.itemCarrouselB{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+.itemCarrouselTarjetaB{
+  width: 100%;
+  height: 100%;
+}
+
+.itemCarrouselArrowsB{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px; 
+}
+
+.itemCarrouselArrowsB > i:hover {
+  cursor: pointer;
+}
+
+.conteCarrouselController{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.conteCarrouselController > a{
+  text-decoration: none;
+  font-size: 2em;
+  color: grey;
+}
+
+.itemCarrouselArrowsB > a > i{
+  color: white;
+}
